@@ -13,10 +13,10 @@ System.out.println(nombrepair(myTab));
 static int nombrepair(int [] a)
 {
 		int cpt=0;
-		for(int i=0;i<a.length;i++)
+		for(int i=0;i<a.length;i++)//analyse chaque element du tableau
 		{
-			if (a[i]%2==0)
-			cpt++;
+			if (a[i]%2==0)//si c'est pair =0
+			cpt++;//compteur augmente par 1
 		}
 		return cpt;
 }

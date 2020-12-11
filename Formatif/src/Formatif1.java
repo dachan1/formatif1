@@ -12,17 +12,17 @@ public class Formatif1
 			for(int i=0; i<10;i++)
 			{
 				
-				montab[i]=(int)(Math.random()*(i+1));
+				montab[i]=(int)(Math.random()*(i+1));//créer les 10 élements par hazard
 				
 			}
-			System.out.println(somme(montab));
+			System.out.println(somme(montab));// méthode pour 
 		}
 	static int somme(int []Tab)
 	{
 			int sum=0;
-			for(int i=0;i<Tab.length;i++)
+			for(int i=0;i<Tab.length;i++)//anaylse chaque élément
 			{
-				 sum=+ Tab[i];
+				 sum=+ Tab[i];//sum tous les éléments ajouter
 			}
 			return sum;
 			
