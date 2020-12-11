@@ -8,26 +8,30 @@ public class Formatif3
 	public static void main(String[] args)
 		{
 			int [] myTab= {14,12,24,12,2,9,8,3,1000,4,10};
-System.out.println(croissant(myTab));
+			System.out.println(shift(myTab));
+
 		}
-	static int [] croissant(int []a)
+	static int [] shift(int []a)
 		{
-			for(int i=0;i<a.length;i++)
+			int tab[] = new int[a.length];
+			int b = Methodestable.plusPetitIndex(a);
+			for(int i=0; i<a.length-1; i++)
 			{
-				int temp;
-				for(int j=i+1;j<a.length;j++)
-				{
-					if(a[i]>a[j])
-					{
-						temp=a[i];
-						a[i]=a[j];
-						a[j]=temp;
-						
-					}
-				}
-				
-			}
-			return a;
+				if(i>b)
+					tab[i]=a[i];
 			
+			else
+			{
+				tab[i]=a[i+1];
+			}
+			tab[a.length-1] = tab[a.length-1];
+			
+				
+			
+}
+			return tab;
 		}
 }
+	
+
+
